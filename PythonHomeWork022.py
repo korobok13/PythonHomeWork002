@@ -10,3 +10,14 @@
 
 # 4 4 -> 2 2
 # 5 6 -> 2 3
+
+sum = int(input('Введите сумму: '))
+comp = int(input('Введите произведение: '))
+x, y = 1, 1
+count = 0
+while sum - y != comp // y:
+    y += 1
+    count += 1
+    if sum - y == comp // y:
+        x = sum - y
+print(f'{sum} {comp} -> {x} {y}')
