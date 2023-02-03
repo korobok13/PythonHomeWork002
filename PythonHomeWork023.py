@@ -5,3 +5,12 @@
 # Пример:
 
 # 10 -> 1 2 4 8
+
+res = int(input('Введите число: '))
+deg = 0
+n = 2
+num = 0
+while num <= res / 2:
+    num = n ** deg
+    deg +=1
+    print(num, end=" ")
